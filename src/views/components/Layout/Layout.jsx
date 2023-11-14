@@ -1,36 +1,20 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import './Layout.css'
+import { Header } from '../Header/Header'
 
 export const Layout = () => {
   return (
     <>
       <header>
-        <div>
-          <img src='#' alt='#' />
-          <h1>Sensei Tasks</h1>
-        </div>
-
-        <nav>
-          <ul>
-            <li>
-              <Link>Inicio</Link>
-            </li>
-            <li>
-              <Link>Servicios</Link>
-            </li>
-            <li>
-              <Link>Iniciar Sesion</Link>
-            </li>
-          </ul>
-        </nav>
+        <Header />
       </header>
-
       <main>
         <Outlet />
       </main>
 
       <footer>
-        Todos los derechos reservados
+        <span>Todos los derechos reservados</span>
+        <span><a href='#'>Volver al Inicio</a></span>
       </footer>
     </>
   )

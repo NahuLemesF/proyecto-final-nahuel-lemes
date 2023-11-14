@@ -1,0 +1,34 @@
+.header {
+    padding-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__banner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__banner--logo {
+    width: 10%;
+    height: 10%;
+}
+.header__banner--brand {
+    width: 18%;
+    height: 18%;
+}
+
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
