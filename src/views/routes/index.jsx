@@ -20,10 +20,12 @@ export const router = createBrowserRouter([
       },
       {
         path: 'login',
+        isLogged: true,
         Component: Login
       },
       {
         path: 'register',
+        isLogged: false,
         Component: Register
       }
     ]
