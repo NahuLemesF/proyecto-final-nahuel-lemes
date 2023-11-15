@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import './Layout.css'
 import { Header } from '../Header/Header'
 import { Footer } from '../Footer/Footer'
+import { WelcomeMessage } from '../WelcomeMessage/WelcomeMessage'
 
 export const Layout = () => {
   return (
@@ -10,6 +11,7 @@ export const Layout = () => {
         <Header />
       </header>
       <main>
+        <WelcomeMessage />
         <Outlet />
       </main>
 

@@ -1,0 +1,42 @@
+
+.welcome {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .welcome__presentation {
+    background-color: #f5f5f554;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome__presentation-list {
+    padding-top: 30px;
+    list-style-type: none;
+  }
+
+  .welcome__presentation-list li {
+    margin-bottom: 10px;
+  }
+
+  .welcome__getStarted {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .welcome__getStarted h2 {
+    color: white;
+  }
+
+  .welcome__banner--brand {
+    width: 50%;
+    height: 50%;
+}
+
+  h1 {
+    color: #333;
+  }
+  

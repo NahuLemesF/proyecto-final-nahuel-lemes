@@ -6,7 +6,7 @@ export const Header = () => {
     <header className='header'>
       <div className='header__banner'>
         <img className='header__banner--logo' src='src/assets/img/logo.svg' alt='Capi Logo' />
-        <img src='src/assets/img/brand.png' alt='' className='header__banner--brand' />
+        <img src='src/assets/img/brand.png' alt='banner' className='header__banner--brand' />
       </div>
 
       <nav className='header__nav'>

@@ -5,20 +5,16 @@ fieldset {
 .card {
     margin-top: 20px;
     padding: 20px;
-    width: 400px;
+    width: 100%;
     height: 350px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1,47,109,0.5);
+    border-radius: 25px;    background: rgba(1, 47, 109, 0.5);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
-    border: 1px solid rgba(1,47,109,0.25);
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    border: 1px solid rgba(1, 47, 109, 0.25);
 }
+
+
+
+
+
 

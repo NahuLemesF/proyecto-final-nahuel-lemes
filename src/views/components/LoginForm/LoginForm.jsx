@@ -8,12 +8,11 @@ export const LoginForm = () => {
 
   const authenticate = (body, event) => {
     authenticateUser(body)
-      .then(response => response.json())
-      .then(response => {
-        const userId = response.user._id
+      // .then(response => response.json())
+      .then(user => {
+        const userId = user._id
         globalThis.localStorage.setItem('userId', userId)
         navigate('/home')
-          .catch(error => { console.log(error) })
       })
   }
 
@@ -29,7 +28,7 @@ export const LoginForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmitLogin}>
+    <form className='login__form' onSubmit={handleSubmitLogin}>
       <fieldset>
         <Input className='input' type='text' name='email' id='email' textLabel='E-mail:' />
         <Input className='input' type='text' name='password' id='password' textLabel='Contraseña:' />
