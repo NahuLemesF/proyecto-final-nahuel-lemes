@@ -1,10 +1,10 @@
-import { FormCard } from '../components/FormCard/FormCard'
+import { SignInForm } from '../components/SignInForm/SignInForm'
 
 export const Register = () => {
   return (
-    <FormCard
-      title='Registrarme'
-      isLogin={false}
-    />
+    <>
+      <SignInForm />
+    </>
+
   )
 }

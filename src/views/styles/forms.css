@@ -3,18 +3,35 @@ fieldset {
 }
 
 .card {
-    margin-top: 20px;
-    padding: 20px;
-    width: 100%;
-    height: 350px;
-    border-radius: 25px;    background: rgba(1, 47, 109, 0.5);
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(156, 156, 156, 0.5);
     border: 1px solid rgba(1, 47, 109, 0.25);
 }
 
+.card__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px;
+    padding: 20px; */
+    width: 50%;
+    height: 350px;
+    border-radius: 25px;   
+    gap: 20px; 
+}
 
-
-
-
-
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(1, 47, 109, 0.25);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,2 +1,7 @@
-@import '../../styles/forms.css'
+@import '../../styles/forms.css';
 
+.card__form-register {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

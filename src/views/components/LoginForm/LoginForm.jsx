@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Input } from '../Input/Input'
 import './LoginForm.css'
 import { authenticateUser } from '../../../services/user'
@@ -8,11 +8,10 @@ export const LoginForm = () => {
 
   const authenticate = (body, event) => {
     authenticateUser(body)
-      // .then(response => response.json())
       .then(user => {
         const userId = user._id
         globalThis.localStorage.setItem('userId', userId)
-        navigate('/home')
+        navigate('/')
       })
   }
 
@@ -28,12 +27,31 @@ export const LoginForm = () => {
   }
 
   return (
-    <form className='login__form' onSubmit={handleSubmitLogin}>
-      <fieldset>
-        <Input className='input' type='text' name='email' id='email' textLabel='E-mail:' />
-        <Input className='input' type='text' name='password' id='password' textLabel='Contraseña:' />
-        <button type='submit'>Iniciar Sesión</button>
-      </fieldset>
-    </form>
+    <>
+      <div className='card'>
+        <form onSubmit={handleSubmitLogin} className='card__form'>
+          <fieldset>
+            <Input
+              className='input'
+              type='text'
+              name='email'
+              id='email'
+              textLabel='E-mail:'
+            />
+            <Input
+              className='input'
+              type='text'
+              name='password'
+              id='password'
+              textLabel='Contraseña:'
+            />
+            <button type='submit'>
+              Iniciar Sesión
+            </button>
+          </fieldset>
+        </form>
+        <span>¿No tienes una cuenta? <Link to='/register'>Regístrate</Link></span>
+      </div>
+    </>
   )
 }
