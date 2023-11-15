@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { LoginForm } from '../LoginForm/LoginForm'
 import { SignInForm } from '../SignInForm/SignInForm'
+import './FormCard.css'
 
 export const FormCard = ({ title, isLogin = true }) => {
   return (

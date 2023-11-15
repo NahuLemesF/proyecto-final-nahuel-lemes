@@ -1,0 +1,18 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.input__label {
+    font-size: 20px;
+    color: white;
+}
+
+.input__textInput {
+    background-color: #ffffff1b;
+    border-radius: 15px;
+    width: 250px;
+    height: 40px;
+}

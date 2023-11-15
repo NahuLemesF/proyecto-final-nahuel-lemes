@@ -6,22 +6,22 @@ export const Header = () => {
     <header className='header'>
       <div className='header__banner'>
         <img className='header__banner--logo' src='src/assets/img/logo.svg' alt='Capi Logo' />
-        <img src='src/assets/img/brand.svg' alt='' className='header__banner--brand' />
+        <img src='src/assets/img/brand.png' alt='' className='header__banner--brand' />
       </div>
 
       <nav className='header__nav'>
         <ul>
           <li>
-            <Link>Inicio</Link>
+            <Link className='header__nav-link' to=''>Inicio</Link>
           </li>
           <li>
-            <Link>Servicios</Link>
+            <Link className='header__nav-link'>Servicios</Link>
           </li>
           <li>
-            <Link>Iniciar Sesion</Link>
+            <Link className='header__nav-link' to='/login'>Iniciar Sesion</Link>
           </li>
           <li>
-            <Link>Registrarse</Link>
+            <Link className='header__nav-link' to='/register'>Registrarse</Link>
           </li>
         </ul>
       </nav>

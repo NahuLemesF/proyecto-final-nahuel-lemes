@@ -23,13 +23,39 @@ export const SignInForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmitForm} className='card' action=''>
+    <form onSubmit={handleSubmitForm} className='card'>
       <fieldset>
-        <Input type='text' id='nombre' name='firstName' textLabel='Nombre:' required />
-        <Input type='text' id='apellido' name='lastName' textLabel='Apellido' required />
-        <Input type='text' id='email' name='email' textLabel='E-mail:' required />
-        <Input type='password' id='password' name='password' textLabel='Contraseña:' required />
-        <button type='submit'>Regístrarme</button>
+        <Input
+          type='text'
+          id='nombre'
+          name='firstName'
+          textLabel='Nombre:'
+          required
+        />
+        <Input
+          type='text'
+          id='apellido'
+          name='lastName'
+          textLabel='Apellido'
+          required
+        />
+        <Input
+          type='text'
+          id='email'
+          name='email'
+          textLabel='E-mail:'
+          required
+        />
+        <Input
+          type='password'
+          id='password'
+          name='password'
+          textLabel='Contraseña:'
+          required
+        />
+        <button type='submit'>
+          Regístrarme
+        </button>
       </fieldset>
     </form>
 

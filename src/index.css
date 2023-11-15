@@ -1,6 +1,14 @@
+:root {
+  --bg-color: #ffe4c4;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
+}
+
+body {
+  background-image: url(./assets/img/bg-body.jpg);
 }
