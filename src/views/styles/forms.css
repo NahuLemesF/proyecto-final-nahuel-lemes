@@ -16,5 +16,9 @@ fieldset {
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     border: 1px solid rgba(1,47,109,0.25);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 

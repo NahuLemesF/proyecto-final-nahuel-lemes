@@ -6,17 +6,13 @@ import { authenticateUser } from '../../../services/user'
 export const LoginForm = () => {
   const navigate = useNavigate()
 
-  if (!globalThis.localStorage) {
-    globalThis.localStorage = {}
-  }
-
   const authenticate = (body, event) => {
     authenticateUser(body)
       .then(response => response.json())
       .then(response => {
         const userId = response.user._id
         globalThis.localStorage.setItem('userId', userId)
-        navigate('/')
+        navigate('/home')
           .catch(error => { console.log(error) })
       })
   }
@@ -30,15 +26,15 @@ export const LoginForm = () => {
       }
       authenticate(body, event)
     }
-
-    return (
-      <form onSubmit={handleSubmitLogin}>
-        <fieldset>
-          <Input className='input' type='text' name='email' id='email' textLabel='E-mail:' />
-          <Input className='input' type='text' name='password' id='password' textLabel='Contraseña:' />
-          <button type='submit'>Iniciar Sesión</button>
-        </fieldset>
-      </form>
-    )
   }
+
+  return (
+    <form onSubmit={handleSubmitLogin}>
+      <fieldset>
+        <Input className='input' type='text' name='email' id='email' textLabel='E-mail:' />
+        <Input className='input' type='text' name='password' id='password' textLabel='Contraseña:' />
+        <button type='submit'>Iniciar Sesión</button>
+      </fieldset>
+    </form>
+  )
 }
