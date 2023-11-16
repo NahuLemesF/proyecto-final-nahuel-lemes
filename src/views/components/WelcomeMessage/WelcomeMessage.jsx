@@ -1,11 +1,12 @@
 import './WelcomeMessage.css'
+import Banner from 'src/assets/img/brand.png'
 
 export const WelcomeMessage = () => {
   return (
     <main className='welcome'>
       <div className='welcome__presentation'>
         <h1>Bienvenido a</h1>
-        <img src='src/assets/img/brand.png' alt='banner-logo' className='welcome__banner--brand' />
+        <img src={Banner} alt='banner-logo' className='welcome__banner--brand' />
         <p>El administrador de tareas que simplifica tu día.</p>
       </div>
       <div className='welcome__cards'>
