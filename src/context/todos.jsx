@@ -5,6 +5,7 @@ export const ToDosContext = createContext()
 
 export const ToDosProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
+
   return (
     <ToDosContext.Provider value={{ state, dispatch }}>
       {children}
