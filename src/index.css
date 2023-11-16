@@ -1,7 +1,3 @@
-:root {
-  --bg-color: #ffe4c4; 
-}
-
 @font-face {
   font-family: 'Indie Flower', cursive;
   src: url('src/assets/fonts/IndieFlower-Regular.ttf');
