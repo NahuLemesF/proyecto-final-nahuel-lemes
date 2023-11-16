@@ -1,0 +1,16 @@
+.task__table {
+    
+}
+
+.task__button {
+    background-color: #3a2626;
+}
+
+.task__button img{
+    width: 25px;
+    height: 25px;
+}
+.task__button:hover {
+    background-color: #3a262693;
+    transition: 0.2s linear;
+}

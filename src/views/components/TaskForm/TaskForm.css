@@ -1,0 +1,25 @@
+.task__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: rgba(222, 184, 135, 0.509);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task__form-title {
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: white;
+
+}
+.task__form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

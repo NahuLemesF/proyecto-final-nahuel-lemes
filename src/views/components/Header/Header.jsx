@@ -15,10 +15,7 @@ export const Header = () => {
             <Link className='header__nav-link' to=''>Inicio</Link>
           </li>
           <li>
-            <Link className='header__nav-link'>Servicios</Link>
-          </li>
-          <li>
-            <Link className='header__nav-link' to='/login'>Iniciar Sesion</Link>
+            <Link className='header__nav-link' to='/login'>Iniciar Sesión</Link>
           </li>
           <li>
             <Link className='header__nav-link' to='/register'>Registrarse</Link>

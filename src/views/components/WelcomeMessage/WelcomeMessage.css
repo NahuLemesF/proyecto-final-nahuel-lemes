@@ -1,3 +1,4 @@
+@import url(../../../index.css);
 
 .welcome {
     max-width: 800px;
@@ -13,6 +14,11 @@
     margin-bottom: 20px;
   }
   
+  .welcome__presentation p, h1 {
+    font-family: 'Indie Flower', cursive;
+    
+  }
+
   .welcome__presentation-list {
     padding-top: 30px;
     list-style-type: none;

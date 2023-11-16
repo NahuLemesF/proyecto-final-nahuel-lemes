@@ -1,9 +1,12 @@
+import { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Input } from '../Input/Input'
 import './LoginForm.css'
 import { authenticateUser } from '../../../services/user'
+import { ToDosContext } from '../../../context/todos'
 
 export const LoginForm = () => {
+  const { dispatch } = useContext(ToDosContext)
   const navigate = useNavigate()
 
   const authenticate = (body, event) => {
@@ -11,7 +14,21 @@ export const LoginForm = () => {
       .then(user => {
         const userId = user._id
         globalThis.localStorage.setItem('userId', userId)
+        dispatch({ type: 'LOGIN_USER' })
         navigate('/')
+      })
+      .catch(error => {
+        console.error('Error al iniciar sesión:', error)
+        let errorMessage = 'El usuario no existe o fue mal ingresado. Por favor, inténtelo nuevamente. '
+
+        if (error.response && error.response.data) {
+          errorMessage = error.response.data.message || errorMessage
+        }
+
+        window.alert(errorMessage)
+      })
+      .finally(() => {
+        event.target.reset()
       })
   }
 
@@ -22,8 +39,8 @@ export const LoginForm = () => {
       if (element.name) {
         body = { ...body, [element.name]: element.value }
       }
-      authenticate(body, event)
     }
+    authenticate(body, event)
   }
 
   return (
@@ -40,7 +57,7 @@ export const LoginForm = () => {
             />
             <Input
               className='input'
-              type='text'
+              type='password'
               name='password'
               id='password'
               textLabel='Contraseña:'
@@ -49,8 +66,8 @@ export const LoginForm = () => {
               Iniciar Sesión
             </button>
           </fieldset>
+          <span>¿No tienes una cuenta? <Link to='/register'>Regístrate</Link></span>
         </form>
-        <span>¿No tienes una cuenta? <Link to='/register'>Regístrate</Link></span>
       </div>
     </>
   )

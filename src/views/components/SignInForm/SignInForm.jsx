@@ -24,6 +24,13 @@ export const SignInForm = () => {
         event.target.reset()
         navigate('/login')
       })
+      .catch(error => {
+        console.error('Error al crear el usuario:', error)
+        window.alert('No se pudo crear el usuario. Por favor, inténtelo nuevamente. ')
+      })
+      .finally(() => {
+        event.target.reset()
+      })
   }
 
   return (
@@ -63,8 +70,8 @@ export const SignInForm = () => {
             <button type='submit'>
               Regístrarme
             </button>
-            <span>¿Ya tienes una cuenta? <Link to='/login'>Inicia Sesión</Link></span>
           </fieldset>
+          <span>¿Ya tienes una cuenta? <Link to='/login'>Inicia Sesión</Link></span>
         </form>
 
       </div>
