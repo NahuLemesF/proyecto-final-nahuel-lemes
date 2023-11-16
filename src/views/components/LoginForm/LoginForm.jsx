@@ -66,7 +66,7 @@ export const LoginForm = () => {
               Iniciar Sesión
             </button>
           </fieldset>
-          <span>¿No tienes una cuenta? <Link to='/register'>Regístrate</Link></span>
+          <span className='card__span'>¿No tienes una cuenta? <Link to='/register'>Regístrate</Link></span>
         </form>
       </div>
     </>

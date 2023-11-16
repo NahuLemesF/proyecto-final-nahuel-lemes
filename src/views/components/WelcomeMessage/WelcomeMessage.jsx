@@ -8,12 +8,18 @@ export const WelcomeMessage = () => {
         <img src='src/assets/img/brand.png' alt='banner-logo' className='welcome__banner--brand' />
         <p>El administrador de tareas que simplifica tu día.</p>
       </div>
-      <ul className='welcome__presentation-list'>
-        <li>Organiza tus tareas de manera eficiente.</li>
-        <li>Establece fechas límite y prioridades.</li>
-        <li>Marca las tareas completadas.</li>
-      </ul>
+      <div className='welcome__cards'>
 
+        <div className='welcome__cards-article'>
+          <article>Organiza tus tareas de manera eficiente.</article>
+        </div>
+        <div className='welcome__cards-article'>
+          <article>Establece fechas límite y prioridades.</article>
+        </div>
+        <div className='welcome__cards-article'>
+          <article>Marca las tareas completadas.</article>
+        </div>
+      </div>
       <div className='welcome__getStarted'>
         <h2>¡Comienza Ahora!</h2>
       </div>

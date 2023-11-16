@@ -1,1 +1,12 @@
 @import '../../../index.css';
+
+body {
+    position: relative;
+    padding-bottom: 10em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

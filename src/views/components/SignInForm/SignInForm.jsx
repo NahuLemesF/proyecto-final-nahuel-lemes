@@ -71,7 +71,7 @@ export const SignInForm = () => {
               Regístrarme
             </button>
           </fieldset>
-          <span>¿Ya tienes una cuenta? <Link to='/login'>Inicia Sesión</Link></span>
+          <span className='card__span'>¿Ya tienes una cuenta? <Link to='/login'>Inicia Sesión</Link></span>
         </form>
 
       </div>
