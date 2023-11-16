@@ -1,5 +1,5 @@
 import './WelcomeMessage.css'
-import Banner from 'src/assets/img/brand.png'
+import Banner from '/src/assets/img/brand.png'
 
 export const WelcomeMessage = () => {
   return (
