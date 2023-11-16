@@ -22,6 +22,10 @@
   .welcome__presentation-list {
     padding-top: 30px;
     list-style-type: none;
+    background-color: #f5f5f554;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
   }
 
   .welcome__presentation-list li {
