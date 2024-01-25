@@ -23,7 +23,7 @@ export const createTask = (body) => {
 }
 
 export const getTasks = () => {
-  return fetch(API_TODO, {
+  return fetch(API_TODO + '?userId=65562c1968ec8c703f854a82', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'

@@ -25,7 +25,7 @@ export const reducer = (state, action) => {
     case 'GET_TASKS':
       return {
         ...state,
-        task: action.payload
+        tasks: action.payload
       }
     case 'SET_CURRENT_TASK':
       return {
